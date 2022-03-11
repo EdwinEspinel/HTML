@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Estudios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css">
+        <script src="modificador.js"></script>
+        <link rel="stylesheet" href="regresar.css">
     </head>
-    <body>
-        <header> 
-            <h1>
-                <dd >Estudios</dd>
-            </h1>
+    <body class="body" onload="main2()">
+        <header class="header"> 
+            <h1>Estudios</h1>
         </header>
-        <p>
-            <h2>Físico</h2>
-            <h4>Universidad del Quindío </h4>
-            <h4 >Armenia,Colombia</h4>
-            <h4 >2019</h4>
-            <br>
-        </p>
-        <p>
-            <h2>Diplomado en docencia universitaria</h2>
-            <h4>Universidad del Quindío </h4>
-            <h4 >Armenia,Colombia</h4>
-            <h4 >2021</h4>
-        </p>
+        <h2 class="h2" onclick="mostrarFisico()" style="cursor:pointer">Físico</h2>
         
+        <h4 id="fisico" data-value-fisico="none">
+            Universidad del Quindío<br><br>
+            Armenia, Colombia<br><br>
+            2019
+        </h4>
+        <h2 class="h2" onclick="mostrarDiplomado()" style="cursor:pointer" data-value-diplomado="none">Diplomado en docencia universitaria</h2>
+        <h4 id="diplomado" data-value-diplomado="none">
+            Universidad del Quindío<br><br>
+            Armenia, Colombia<br><br>
+            2021
+        </h4>
+        
+        <button class="boton regresar" ><a href="index.html">Regresar</a></button>
     </body>
 </html>

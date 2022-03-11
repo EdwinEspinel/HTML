@@ -5,31 +5,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css">
+        <script src="modificador.js"></script>
+        <link rel="stylesheet" href="regresar.css">
     </head>
-    <body>
-        <header> 
-            <h1>
-                <dd>Referencias Personales</dd>
-            </h1>
+    <body class="body" onload="main2()">
+        <header class="header"> 
+            <h1>Referencias Personales</h1>
         </header>
-        <p>
-            <h2>Juan Pablo Giraldo Montoya</h2>
-            <h4>Heiinsohn </h4>
-            <h4>Ingeniero de desarrollo</h4>
-            <h4>3125209339</h4>
-            <br>
-        </p>
-        <p>
-            <h2>Julio Roberto Lima Perez</h2>
-            <h4>Universidad de la calle </h4>
-            <h4>Profesor de Estadistica</h4>
-            <h4>3185699223</h4>
-        </p>
-        <p>
-            <h2>Aneli Florez Ramirez</h2>
-            <h4>Academia basica de informatica </h4>
-            <h4>Profesor de programación</h4>
-            <h4>3145659865</h4>
-        </p>
+
+        <h2 class="h2" onclick="mostrarJuan()" style="cursor:pointer">Juan Pablo Giraldo Montoya</h2>
+        <h4 id="juan" data-value-juan="none">Heiinsohn 
+            Ingeniero de desarrollo<br><br>
+            3125209339<br><br>
+        </h4>
+
+        <h2 class="h2" onclick="mostrarJulio()" style="cursor:pointer" >Julio Roberto Lima Perez</h2>
+        <h4 id="julio" data-value-julio="none">Universidad de la calle <br><br>
+            Profesor de Estadistica<br><br>
+            3185699223
+        </h4>
+
+        <h2 class="h2" onclick="mostrarAneli()" style="cursor:pointer" >Aneli Florez Ramirez</h2>
+        <h4 id="aneli" data-value-aneli="none">Academia basica de informatica<br><br>
+            Profesor de programación<br><br>
+            3145659865
+        </h4>
+
+        <button class="boton regresar"><a href="index.html">Regresar</a></button>
     </body>
 </html>

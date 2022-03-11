@@ -6,33 +6,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css">
+        <script src="modificador.js"></script>
+        <link rel="stylesheet" href="regresar.css">
     </head>
-    <body>
-        <header> 
-            <h1>
-                <dd>Referencias Familiares</dd>
-            </h1>
+    <body class="body" onload="main2()">
+        <header class="header" > 
+            <h1>Referencias Familiares</h1>
         </header>
-        <p>
-            <h2>Tito Espinel Alfonso</h2>
-            <h4>Padre </h4>
-            <h4>Apiarios Spivar </h4>
-            <h4>Produccion y comercialización de productor apicolas</h4>
-            <h4>3128612099</h4>
-        </p>
-        <p>
-            <h2>Alba Yirley Espinel Munevar</h2>
-            <h4>Hermana </h4>
-            <h4>Comunicadora social </h4>
-            <h4>Consultora social</h4>
-            <h4>3115468985</h4>
-        </p>
-        <p>
-            <h2>Olga Marina Munevar Mora</h2>
-            <h4>Madre </h4>
-            <h4>Ama de hogar </h4>
-            <h4>Ama de hogar</h4>
-            <h4>3113382408</h4>
-        </p>
+            <h2 class="h2" onclick="mostrarPapa()" style="cursor:pointer">Tito Espinel Alfonso</h2>
+            <h4 id="papa" data-value-papa="none"
+                Padre<br><br>
+                Apiarios Spivar <br><br>
+                Produccion y comercialización de productor apicolas<br><br>
+                3128612099
+            </h4>
+            <h2 class="h2" onclick="mostrarHermana()" style="cursor:pointer">Alba Yirley Espinel Munevar</h2>
+            <h4 id="hermana" data-value-hermana="none">Hermana<br><br> 
+                Comunicadora social<br><br> 
+                Consultora social<br><br>
+                3115468985
+            </h4>
+            <h2 class="h2" onclick="mostrarMama()" style="cursor:pointer">Olga Marina Munevar Mora</h2>
+            <h4 id="mama" data-value-mama="none">Madre <br><br>
+                Ama de hogar <br><br>
+                Ama de hogar<br><br>
+                3113382408
+            </h4>
+            
+            <button class="boton regresar"><a href="index.html">Regresar</a></button>
     </body>
 </html>

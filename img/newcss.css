@@ -1,0 +1,38 @@
+/*combinacion numero1*/
+h2{
+    background-color: #f7f0f0;
+    color: black;
+}
+header{
+    background-color: blue;
+    color: aliceblue;
+}
+
+.boton{
+    background-color: blue;
+}
+body{
+    background-color: #f7f0f0;
+}
+img{
+    border: 5px solid darkblue;
+}
+/*combinacion numero2*/
+h2{
+    background-color: #f7f0f0;
+    color: #5B5863;
+}
+header{
+    background-color: blue;
+    color: aliceblue;
+}
+
+.boton{
+    background-color: blue;
+}
+body{
+    background-color: #f7f0f0;
+}
+img{
+    border: 5px solid black;
+}

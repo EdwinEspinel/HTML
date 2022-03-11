@@ -6,35 +6,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="regresar.css">
+        <script src="modificador.js"></script>
+        <link rel="stylesheet" href="regresar.css">
     </head>
-    <body>
-        <header> 
-            <h1>
-                <dd>Experiencia laboral</dd>
-            </h1>
+    <body class="body" onload="main2()">
+        <header class="header"> 
+            <h1>Experiencia laboral</h1>
             <br>
         </header>
         <p>
-            <h2>Auxiliar de investigación</h2>
-            <h4>Grupo de optoelectrónica </h4>
-            <h4>Universidad del Quindío </h4>
-            <h4>2014-2016</h4>
-        </p>
-        <p>
-            <h2>Asesorias para las asignaturas de física y matemáticas</h2>
-            <h4>Programa de física </h4>
-            <h4>Universidad del Quindío </h4>
-            <h4>Agosto a Noviembre del 2017</h4>
-        </p>
-        <p>
-            <h2>Docente de fisica y matematicas</h2>
-            <h4>Colegio licero cervantes </h4>
-            <h4>2019 </h4>
-        </p>
-        <p>
-            <h2>Desarrollador python</h2>
-            <h4>python para todos </h4>
-            <h4>2020 </h4>
-        </p>
+        <h2 class="h2" onclick="mostrarAuxiliar()" style="cursor:pointer">Auxiliar de investigación</h2>
+        <h4 id="auxiliar" data-value-auxiliar="none">
+            Grupo de optoelectrónica<br><br> 
+            Universidad del Quindío<br><br>
+            2014-2016
+        </h4>
+
+        <h2 class="h2" onclick="mostrarAsesorias()" style="cursor:pointer">Asesorias para las asignaturas de física y matemáticas</h2>
+        <h4 id="asesorias" data-value-asesorias="none">
+            Programa de física<br><br> 
+            Universidad del Quindío<br><br> 
+            Agosto a Noviembre del 2017
+        </h4>
+        
+
+        <h2 class="h2" onclick="mostrarDocente()" style="cursor:pointer">Docente de fisica y matematicas</h2>
+        <h4 id="docente" data-value-docente="none">
+            Colegio licero cervantes<br><br>  
+            2019<br><br> 
+        </h4>
+
+
+        <h2 class="h2" onclick="mostrarPython()" style="cursor:pointer">Desarrollador python</h2>
+        <h4 id="python" data-value-python="none">python para todos <br><br>
+            2020 <br><br>
+        </h4>
+
+        <button class="boton regresar"><a href="index.html">Regresar</a></button>
     </body>
 </html>
